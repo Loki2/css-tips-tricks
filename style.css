@@ -1,0 +1,68 @@
+* {
+      background-color: lightblue;
+}
+
+html {
+}
+
+body {
+      display: flex;
+      flex-wrap: wrap;
+      /* align-items: center;
+      justify-content: center; */
+}
+
+/* Learn to using clip-path */
+.clip__path__circle {
+      width: 200px;
+      height: 200px;
+      background-color: rebeccapurple;
+      clip-path: circle();
+      transition: all 2s ease;
+}
+
+.clip__path__circle:hover {
+      clip-path: ellipse();
+}
+
+.clip__path__circle__shape {
+      width: 200px;
+      height: 200px;
+      background-color: rebeccapurple;
+      clip-path: circle(50% at 0 0);
+      transition: all 2s ease;
+}
+.clip__path__circle__shape:hover {
+      clip-path: circle(100%);
+}
+
+.clip__path__circle__polygon {
+      width: 200px;
+      height: 200px;
+      background-color: rebeccapurple;
+      clip-path: polygon(
+            37% 26%,
+            26% 37%,
+            28% 53%,
+            46% 58%,
+            64% 53%,
+            74% 34%,
+            64% 18%
+      );
+}
+
+.clip__path__circle__polygon:hover {
+      width: 200px;
+      height: 200px;
+      background-color: rebeccapurple;
+      transition: all 2s ease;
+      clip-path: polygon(
+            0% 26%,
+            26% 37%,
+            28% 0%,
+            46% 58%,
+            0% 53%,
+            74% 34%,
+            0% 18%
+      );
+}
